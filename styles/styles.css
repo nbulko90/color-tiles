@@ -1,3 +1,29 @@
-body{
-	font-size: 15;
+html{
+	background-color: #eaedf2;
 }
+
+h1{
+	text-align:center;
+	font-family:Roboto;
+	color: #1b62d3;
+}
+
+#clear{
+	display: block;
+	position: relative;
+	top: -15px;
+	margin: 0 auto;
+	height: 40px;
+	width: 130px;
+	font-family: 'Roboto', sans-serif;
+}
+
+#container{
+	display:block;
+	margin: 0 auto;
+	background-color:blue;
+	width: 700px;
+	height:350px;
+}
+
+
