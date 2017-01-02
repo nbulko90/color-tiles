@@ -8,12 +8,14 @@ h1{
 	color: #1b62d3;
 }
 
+
 #clear{
 	display: block;
 	position: relative;
-	top: -15px;
-	margin: 0 auto;
-	height: 30px;
+	left: 45%;
+	margin 15px auto;
+	margin-bottom: 20px;
+	height: 40px;
 	width: 130px;
 	font-family: 'Roboto', sans-serif;
 }
@@ -21,6 +23,7 @@ h1{
 #container{
 	display:block;
 	margin: 0 auto;
+	background-color: #eaedf2;
 	border: 1px solid black;
 	width: 800px;
 	height:800px;
@@ -29,7 +32,7 @@ h1{
 .tile{
 	height: 0;
 	width: 0;
-	opacity: 0;
+	opacity: .1;
 	background-color: #black;
 	float: left;
 }

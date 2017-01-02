@@ -6,7 +6,12 @@ $(document).ready(function(){
 	init();
 	
 	$("#clear").click(function(){
-		$("#container").css("background-color", "purple");
+		$(".tile").remove();
+
+		numTiles = prompt("Please specify the number of tiles across/down: ");
+
+		populate(numTiles);
+		init();
 	});
 
 function populate(numTiles){
@@ -19,12 +24,13 @@ function populate(numTiles){
 
 	$(".tile").css("height", tileSize);
 	$(".tile").css("width", tileSize);
-	$(".tile").css("background-color", "black");
 }
 
 function init(){
 	$(".tile").hover(function(){
-		$(this).css("opacity", "+=.1");
+		var randomColor = 'rgb(' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ',' + (Math.floor(Math.random() * 256)) + ')';
+		$(this).css("background-color", randomColor);
+		$(this).css("opacity", "+=.2");
 	})
 }
 	
